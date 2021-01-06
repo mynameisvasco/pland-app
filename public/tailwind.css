@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-lg {
+  @apply px-4;
+  @apply py-2;
+  @apply bg-white;
+  @apply rounded-md;
+  @apply shadow-xl;
+  @apply w-full;
+  @apply text-2xl;
+  @apply transition-all;
+  @apply duration-300;
+  @apply border-2;
+  @apply border-gray-200;
+}
+
+.input-lg:focus {
+  @apply outline-none;
+  @apply border-blue-500;
+  @apply border-2;
+}
+
+.input-lg::placeholder {
+  @apply text-gray-400;
+  @apply font-normal;
+}

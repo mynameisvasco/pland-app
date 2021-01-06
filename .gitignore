@@ -1,0 +1,4 @@
+public/build
+public/index.css
+node_modules/
+.DS_Store
