@@ -6,18 +6,18 @@
   @apply px-4;
   @apply py-2;
   @apply bg-white;
-  @apply rounded-md;
+  @apply rounded-lg;
   @apply shadow-sm;
   @apply text-2xl;
   @apply transition-all;
   @apply duration-300;
   @apply border-2;
-  @apply border-gray-200;
+  @apply border-gray-100;
 }
 
 .input-lg:focus {
   @apply outline-none;
-  @apply border-blue-500;
+  @apply border-indigo-500;
   @apply border-2;
 }
 
@@ -29,16 +29,22 @@
 .btn-lg {
   @apply px-4;
   @apply py-2;
-  @apply rounded-md;
+  @apply rounded-lg;
   @apply shadow-sm;
   @apply text-2xl;
   @apply transition-all;
   @apply duration-300;
   @apply border-2;
-  @apply border-gray-200;
+  @apply border-gray-100;
+  @apply font-semibold;
 }
 
 .btn-white {
   @apply bg-white;
   @apply text-gray-900;
+}
+
+.btn-indigo {
+  @apply bg-indigo-500;
+  @apply text-white;
 }
