@@ -1,8 +1,11 @@
 <script>
+    import SearchedEventsList from "./SearchedEventsList.svelte";
+    import { searchedEvents } from "../../services/EventsService";
+
     import Sidebar from "./Sidebar.svelte";
     import TopBar from "./TopBar.svelte";
 
-    let isSidebarOpen = true;
+    let isSidebarOpen = false;
     function handleSidebarToggle() {
         isSidebarOpen = !isSidebarOpen;
     }
@@ -10,7 +13,10 @@
 
 <TopBar onSidebarToggle={handleSidebarToggle} />
 <Sidebar isOpen={isSidebarOpen} />
-<div>
+<div class="h-screen">
+    <div class="h-full" class:hidden={$searchedEvents.length == 0}>
+        <SearchedEventsList />
+    </div>
     <slot />
     <div
         on:click={handleSidebarToggle}

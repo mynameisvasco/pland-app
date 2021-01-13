@@ -5,23 +5,43 @@
 .input-lg {
   @apply px-4;
   @apply py-2;
-  @apply bg-white;
   @apply rounded-lg;
   @apply shadow-sm;
   @apply text-2xl;
   @apply transition-all;
   @apply duration-300;
   @apply border-2;
+}
+
+.input-white {
+  @apply bg-white;
   @apply border-gray-100;
 }
 
-.input-lg:focus {
+.input-white:focus {
   @apply outline-none;
   @apply border-indigo-500;
   @apply border-2;
 }
 
-.input-lg::placeholder {
+.input-white::placeholder {
+  @apply text-gray-400;
+  @apply font-normal;
+}
+
+.input-gray {
+  @apply bg-gray-200;
+  @apply border-gray-200;
+}
+
+.input-gray:focus {
+  @apply outline-none;
+  @apply bg-white;
+  @apply border-indigo-500;
+  @apply border-2;
+}
+
+.input-gray::placeholder {
   @apply text-gray-400;
   @apply font-normal;
 }
@@ -35,16 +55,17 @@
   @apply transition-all;
   @apply duration-300;
   @apply border-2;
-  @apply border-gray-100;
   @apply font-semibold;
 }
 
 .btn-white {
   @apply bg-white;
+  @apply border-gray-100;
   @apply text-gray-900;
 }
 
 .btn-indigo {
   @apply bg-indigo-500;
+  @apply border-indigo-400;
   @apply text-white;
 }
